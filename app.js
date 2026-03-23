@@ -26,6 +26,8 @@ app.use(session({
     }
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'Assets')));
+// Fallback for uppercase Assets for backward compatibility
 app.use('/Assets', express.static(path.join(__dirname, 'Assets')));
 
 // MongoDB connection
