@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "vercel dev"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
