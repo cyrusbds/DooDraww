@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <img class="img-bg" src="/Assets/Doodle-bg.png" alt="">
+    
+    <!-- Nav Section -->
+
+    <header>
+        <div class="nav-bar">
+            <div class="left">
+                <div class="hamburger-menu">
+                    <button class="hamburger-btn">|||</button>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html"><img class="nav-logo" src="/Assets/Doodraw.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="center">
+                <nav class="center-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/profile">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btns">
+                <a href="draw.html"><button class="draw-btn">DRAW</button></a>
+                <button class="logout-btn" id="logout">Log Out</button>
+            </div>
+        </div>
+    </header>
+    <div class="side-nav">
+        <div class="side-close">
+            <button class="X-btn">X</button>
+        </div>
+        <nav class="side-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <a href="account.html"><button class="nav-acc">LOGIN/SIGNUP</button></a>
+                <button class="logout-nav" id="logout">Log Out</button>
+            </ul>
+        </nav>
+    </div>
+    <div class="black-bg"></div>
+
+    <!-- Main Profile Page -->
+
+    <main class="main-profile">
+        <div class="profile-sect">
+            <aside class="profile">
+                <div class="profile-photo">
+                    <div class="profile-cont" id="profile-dp">U</div>
+                </div>
+                <div class="profile-info">
+                    <div class="user-details">
+                        <h3 id="user-display">Name</h3>
+                        <p id="email-display">Email</p>
+                    </div>
+                    <div class="persona-profile">
+                        <div class="persona-details">
+                            <span class="persona-number" id="favs">0</span>
+                            <span class="persona-text">Favorite</span>
+                        </div>
+                        <div class="persona-details">
+                            <span class="persona-number" id="posts">0</span>
+                            <span class="persona-text">Posts</span>
+                        </div>
+                        <div class="persona-details">
+                            <span class="persona-number" id="saves">0</span>
+                            <span class="persona-text">Drawings</span>
+                        </div>
+                    </div>
+                    <div class="profile-media">
+                        <button class="profile-btn">
+                            <span class="profile-icon"><i class="bx bxl-facebook"></i></span>
+                        </button>
+                        <button class="profile-btn">
+                            <span class="profile-icon"><i class="bx bxl-instagram"></i></span>
+                        </button>
+                        <button class="profile-btn">
+                            <span class="profile-icon"><i class="bx bxl-twitter"></i></span>
+                        </button>
+                        <button class="profile-btn">
+                            <span class="profile-icon"><i class="bx bxl-youtube"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="profile-main">
+                <div class="profile-tabs">
+                    <button class="active" data-tab="profile-drawings">Drawings</button>
+                    <button data-tab="profile-favorites">Favorites</button>
+                </div>
+                <div class="gallery">
+                    <div class="profile-content active" id="profile-drawings">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="profile-content" id="profile-favorites">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer">
+            <div class="left-foot">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="draw.html">Draw</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="center-foot">
+                <img class="foot-logo" src="/Assets/Doodraw.png" alt="Logo">
+            </div>
+            <div class="right-foot">
+                <h3>Socials</h3>
+                <div class="social-icons">
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-facebook"></i></span>
+                        <span class="social-text">FACEBOOK</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-instagram"></i></span>
+                        <span class="social-text">INSTAGRAM</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-twitter"></i></span>
+                        <span class="social-text">X</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-youtube"></i></span>
+                        <span class="social-text">YOUTUBE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

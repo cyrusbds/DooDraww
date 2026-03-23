@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+
+    <img class="img-bg" src="/Assets/Doodle-bg.png" alt="">
+    
+    <!-- Nav Section -->
+
+    <header>
+        <div class="nav-bar">
+            <div class="left">
+                <div class="hamburger-menu">
+                    <button class="hamburger-btn">|||</button>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html"><img class="nav-logo" src="/Assets/Doodraw.png" alt="Logo"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Search...">
+                    <button id="search-btn"><i class="bx bx-search"></i></button>
+                </div>
+            </div>
+            <div class="center">
+                <nav class="center-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/profile">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btns">
+                <a href="draw.html"><button class="draw-btn">DRAW</button></a>
+                <a href="account.html"><button class="acc-btn">LOGIN/SIGNUP</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="side-nav">
+        <div class="side-close">
+            <button class="X-btn">X</button>
+        </div>
+                <nav class="side-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/profile">Profile</a></li>
+                        <a href="account.html"><button class="nav-acc">LOGIN/SIGNUP</button></a>
+                    </ul>
+                </nav>
+    </div>
+    <div class="black-bg"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-sect">
+        <div class="hero-content">
+            <h1>Welcome to DooDraw</h1>
+            <p>Where you Draw your own Doodles</p>
+            <div class="hero-btns">
+                <a href="draw.html"><button class="hero-draw-btn">START DRAWING</button></a>
+                <a href="account.html"><button class="hero-acc-btn">CREATE ACCOUNT</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+     
+    <main class="main-home">
+        <section class="main-content">
+            <aside class="side-bar">
+                <h2>Categories</h2>
+                <div class="categories">
+                    <button class="active">ALL</button>
+                    <button>EXPLORE</button>
+                    <button>FEATURED</button>
+                    <button>HOT</button>
+                    <button>TRENDING</button>
+                    <button>POPULAR</button>
+                </div>
+            </aside>
+
+            <section class="gallery">
+                <div class="img-gallery" id="draw-gallery">
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer">
+            <div class="left-foot">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="draw.html">Draw</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="center-foot">
+                <img class="foot-logo" src="/Assets/Doodraw.png" alt="Logo">
+            </div>
+            <div class="right-foot">
+                <h3>Socials</h3>
+                <div class="social-icons">
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-facebook"></i></span>
+                        <span class="social-text">FACEBOOK</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-instagram"></i></span>
+                        <span class="social-text">INSTAGRAM</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-twitter"></i></span>
+                        <span class="social-text">X</span>
+                    </button>
+                    <button class="social-btn">
+                        <span class="social-icon"><i class="bx bxl-youtube"></i></span>
+                        <span class="social-text">YOUTUBE</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

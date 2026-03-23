@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Start Drawing</title>
+</head>
+<body>
+    
+    <img class="img-bg" src="/Assets/Doodle-bg.png" alt="">
+
+    <!-- Nav Section -->
+
+    <header>
+        <div class="nav-bar">
+            <div class="left">
+                <div class="hamburger-menu">
+                    <button class="hamburger-btn">|||</button>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html"><img class="nav-logo" src="/Assets/Doodraw.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="center">
+                <nav class="center-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btns">
+                <a href="draw.html"><button class="draw-btn">DRAW</button></a>
+                <a href="account.html"><button class="acc-btn">LOGIN/SIGNUP</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="side-nav">
+        <div class="side-close">
+            <button class="X-btn">X</button>
+        </div>
+        <nav class="side-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <a href="account.html"><button class="nav-acc">LOGIN/SIGNUP</button></a>
+            </ul>
+        </nav>
+    </div>
+    <div class="black-bg"></div>
+
+    <main class="main-draw">
+        <div class="drawing-section">
+            <aside class="tools">
+                <h2>Drawing Tools</h2>
+                <div class="draw-tools">
+                    <p>Tools</p>
+                    <div class="tool-btns">
+                        <button class="active" id="pen" title="Pen"><i class="bx bx-pencil"></i><span class="tool-text">Pen</span></button>
+                        <button id="eraser" title="Eraser"><i class="bx bx-eraser"></i><span class="tool-text">Eraser</span></button>
+                    </div>
+                </div>
+                <div class="draw-color">
+                    <p>Colors</p>
+                    <div class="colors">
+                        <button id="color-btn" title="Color"></button>
+                        <input type="color" value="#000000" id="curr-color">
+                    </div>
+                </div>
+                <div class="draw-brush">
+                    <p>Size: <span id="size-value">3px</span></p>
+                    <input type="range" id="brush-range" min="1" max="50" value="3">
+                    <input type="number" id="brush-num" min="1" max="50" value="3">
+                </div>
+                <div class="other-btns">
+                    <button class="clear-btn other-btn" id="clear" title="Clear"><i class="bx bx-trash"></i><span>Clear Canvas</span></button>
+                    <button class="post-btn other-btn" id="post" title="Post"><i class='bx bx-send'></i><span>Post</span></button>
+                    <button class="save-btn other-btn" id="save" title="Save"><i class='bx bx-bookmark'></i><span>Save</span></button>
+                    <button class="fav-btn other-btn" id="favorite" title="Favorite"><i class='bx bx-heart'></i><span>Favorites</span></button>
+                    <button class="down-btn other-btn" id="download" title="Download"><i class='bx bx-download'></i><span>Download</span></button>
+                </div>
+            </aside>
+            <section class="draw-canvas">
+                <canvas id="canvas"></canvas>
+            </section>
+        </div>
+    </main>
+
+    <script src="draw.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
