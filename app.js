@@ -19,7 +19,11 @@ app.use(session({
     secret: process.env.SESSION_SECRET || 'your-secret-key',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false }
+    cookie: { 
+        secure: process.env.NODE_ENV === 'production',
+        httpOnly: true,
+        maxAge: 24 * 60 * 60 * 1000
+    }
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/Assets', express.static(path.join(__dirname, 'Assets')));
@@ -207,6 +211,12 @@ app.get('/profile', authRedirect, (req, res) => {
     res.sendFile(path.join(__dirname, 'public/profile.html'));
 });
 
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
-});
+// For local development: listen on port
+if (process.env.VERCEL !== '1') {
+    app.listen(port, () => {
+        console.log(`Server running on http://localhost:${port}`);
+    });
+}
+
+// Export for Vercel serverless
+module.exports = app;
